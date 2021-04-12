@@ -32,7 +32,6 @@ def index():
 		img = Image.open(f)
 		pdf = convert_to_pdf(img)
 		img.close()
-		pdf.seek(0)
 		i = file.filename.find(".")
 		name = file.filename[:i]
 		return send_file(pdf, attachment_filename='{}.pdf'.format(name), as_attachment=True)
