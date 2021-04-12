@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+#main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 200px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	background: #12c2e9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+	background-color: transparent;
+	position: absolute;
+}
+
+h2 {
+	color: white;
+	padding-left: 100px;
+}
+
+h1 {
+	color: white;
+	font-weight: 900;
+	font-size: 3rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input[type="file"] {
+	color: white;
+	font-size: 1rem;
+}
+
+input[type="submit"] {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-top: 4rem;
+	background-color: transparent;
+	outline: none;
+	border: 3px solid white;
+	border-radius: 70px;
+	padding: 1.3rem 5rem;
+	/*transition: all .2s;*/
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	position: relative;
+	top: -4px;
+	filter: drop-shadow(0px 4px 4px #4444dd);
+}

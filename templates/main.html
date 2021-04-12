@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta lang="fi">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<header>
+			<h2>PDF kääntäjä</h2>
+		</header>
+		<div id="main-container">
+			<h1>Lataa uusi tiedosto</h1>
+			<form method="post" action="/" enctype="multipart/form-data">
+				<input type="file" name="file" size="160">
+				<input type="submit">
+			</form>
+		</div>
+	</body>
+</html>
