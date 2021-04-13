@@ -32,6 +32,7 @@ h2 {
 h1 {
 	color: white;
 	font-weight: 900;
+	text-align: center;
 	font-size: 3rem;
 }
 
@@ -39,11 +40,34 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	/*background-color: green;*/
+	padding: 10%;
+	padding-bottom: 60px;
+	border-radius: 50px;
+	border: 4px dashed white;
+}
+
+.highlight {
+	background-color: black;
+}
+
+form label {
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+form label strong:hover {
+	cursor: pointer;
 }
 
 input[type="file"] {
 	color: white;
 	font-size: 1rem;
+	display: none;
+	height: 0;
 }
 
 input[type="submit"] {
