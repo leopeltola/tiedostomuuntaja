@@ -1,3 +1,7 @@
+:root {
+	--default-width: 50%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -5,11 +9,11 @@ body {
 
 }
 
-#main-container {
+#bg {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	/* padding: 200px; */
 	box-sizing: border-box;
 	width: 100%;
@@ -20,13 +24,21 @@ body {
 }
 
 header {
-	background-color: transparent;
-	position: fixed;
+	/*background-color: blue;*/
+	width: 50%;
 }
 
 h2 {
 	color: white;
-	padding-left: 100px;
+}
+
+.content {
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 h1 {
@@ -46,11 +58,15 @@ form {
 	padding: 10%;
 	padding-bottom: 60px;
 	border-radius: 50px;
+	width: var(--default-width);
 	border: 4px dashed white;
+	transition: all .2s ease;
 }
 
 .highlight {
-	background-color: black;
+	background-color: grey;
+	/*border: 7px dashed white;*/
+
 }
 
 form label {
